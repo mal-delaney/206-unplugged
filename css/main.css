@@ -150,6 +150,7 @@ address {
 
   header,
   footer {
+    background-color: #202322;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -168,25 +169,33 @@ address {
     margin:0%;
   }
   .header-divider {
-    width: 100%;
+    background: #3a3a3a;
     height: 1px;
+    width: 100%;
     margin: 10px 0 20px;
   }
   header nav {
+    width: 60%;
+    font-size:1.125em;
+    font-weight:700;
+    text-transform: uppercase;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-flow: row wrap;
-    width: 60%;
   }
   
   header nav ul {
+    width: 100%;
     display: flex;
     justify-content: space-around;
-    width: 100%;
   }
 
+  header nav ul li {
+    font-size: 1.125em;
+  }
   footer {
+    text-align: center;
     flex-direction: column;
   }
   footer p {
@@ -431,6 +440,10 @@ header .content-wrapper {
   justify-content: space-between;
 }
 
+header figure {
+  width: 30%;
+}
+
 header nav {
   width: 20%;
 }
@@ -543,6 +556,13 @@ footer .copy-right {
   width: 100%;
 }
 
+.faq h4,
+.faq p {
+  font-size: .875em;
+  line-height: 1.125;
+ }
+}
+
 @media only screen and (min-width: 1200px) {
   /*Desktop styles here*/
 
@@ -553,9 +573,23 @@ header {
   max-width: 960px;
 }
 
+h2 {
+  font-size: 2.25em;
+}
+
+h3,
+h4 {
+  font-size: 1.875em;
+}
+
+p {
+  font-size: 1.125em;
+  line-height: 1.333;
+}
 /* Hero area */
 
 .hero-area h1 {
+  font-size: 3.75em;
   width: 60%;
 }
 
@@ -571,6 +605,10 @@ aside .content-wrapper   .form {
 
 }
 
+.form-description p {
+font-size: 1.125em;
+}
+
 /* Features */
 
 .features h2 {
@@ -583,8 +621,17 @@ aside .content-wrapper   .form {
 
 /* Reviews */
 
+.reviews h2 {
+  padding-bottom: 50px;
+}
+
+
 .reviews article div {
   width: 42%;
+}
+
+footer h4 {
+  font-size: 1.875em;
 }
 
 /* ==========================================================================
@@ -594,7 +641,12 @@ aside .content-wrapper   .form {
 .mission h2,
 .contact-section .content-wrapper h2 {
 width: 95%;
+font-size: 3em;
 
+}
+
+.contact-content h4 {
+  font-size: 1.875em;
 }
 
  /* ==========================================================================
@@ -603,8 +655,13 @@ width: 95%;
 
 .faq h2 {
   width: 100%;
+  font-size: 3em;
 }
 
+.faq h4,
+.faq p {
+  font-size: 1.125em;
+  line-height: 1;
 }
 /* ==========================================================================
    Print styles.
